@@ -1,0 +1,216 @@
+<body>
+
+  <div class="container" style="margin-bottom: 1500px ;">
+    <div id="wrapper">
+
+      <div id="banner">
+        <div class="box-left">
+          <h2>
+            <span>XE MÁY</span>
+            <br>
+            <span>ĐẲNG CẤP</span>
+          </h2>
+          <p>Chuyên cung cấp các dòng xe từ tay ga cho đến phâm khối lớn với
+            chất lượng đi lên hàng đầu
+          </p>
+          <button>Mua ngay</button>
+        </div>
+        <div class="box-right">
+          <img src="assets/img1.jpg" alt="">
+          <img src="assets/img1.jpg" alt="">
+          <img src="assets/img1.jpg" alt="">
+        </div>
+        <div class="to-bottom">
+          <a href="">
+            <img src="assets/anh1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div id="wp-products" style="text-align: center;">
+        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+        <ul id="list-products">
+          <div class="item" *ngFor="let pro of products.slice(0,3)">
+            <a routerLink="chi-tiet/{{pro.id}}">
+              <img src="{{pro.image}}" style="width: 220px;height: 150px;" alt="">
+              <div class="name">{{pro.name}}</div>
+
+              <div class="price">{{pro.price}} </div>
+            </a>
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger" style="color:white;width:150px" (click)="addtoCart(pro)">Thêm
+                giỏ hàng</button>
+            </div>
+          </div>
+
+
+        </ul>
+        <div class="list-page">
+          <div class="item">
+            <a href="">1</a>
+          </div>
+          <div class="item">
+            <a href="">2</a>
+          </div>
+          <div class="item">
+            <a href="">3</a>
+          </div>
+          <div class="item">
+            <a href="">4</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="saleoff">
+        <div class="box-left">
+          <h1>
+            <span>ĐẠI GIẢM GIÁ LÊN ĐẾN</span>
+            <span>10%</span>
+          </h1>
+        </div>
+        <div class="box-right"></div>
+      </div>
+
+      <div id="comment">
+        <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+        <div id="comment-body">
+          <div class="prev">
+            <a href="#">
+              <img src="../../../assets/xuộc1.jpg" alt="">
+            </a>
+          </div>
+          <ul id="list-comment">
+            <li class="item">
+              <div class="avatar ">
+                <img class="rounded-[12px]" src="../../../assets/anh3.jpg" style="width: 200px;" alt="">
+
+              </div>
+              <div class="stars">
+                <span>
+                  <img src="../../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../../assets/sao.jpg" alt="">
+                </span>
+              </div>
+              <div class="name">Nguyễn Đình Vũ</div>
+
+              <div class="text">
+                <p>Xe đi chán lắm anh ạ, mua tốn tiền, hay là anh mua cho em đi rồi em xin nhận..</p>
+              </div>
+            </li>
+            <li class="item">
+              <div class="avatar">
+                <img src="assets/anh5.png" alt="">
+              </div>
+              <div class="stars">
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+              </div>
+              <div class="name">Trần Ngọc Sơn</div>
+
+              <div class="text">
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.</p>
+              </div>
+            </li>
+            <li class="item">
+              <div class="avatar">
+                <img src="assets/anh4.png" alt="">
+
+              </div>
+              <div class="stars">
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+                <span>
+                  <img src="../../assets/sao.jpg" alt="">
+                </span>
+              </div>
+              <div class="name">Nguyễn Trần Vi</div>
+
+              <div class="text">
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="next">
+            <a href="#">
+              <img src="../../../assets/xuộc2.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <script>
+    const next = document.querySelector('.next')
+    const prev = document.querySelector('.prev')
+    const comment = document.querySelector('#list-comment')
+    const commentItem = document.querySelectorAll('#list-comment .item')
+    var translateY = 0
+    var count = commentItem.length
+
+    next.addEventListener('click', function (event) {
+      event.preventDefault()
+      if (count == 1) {
+        // Xem hết bình luận
+        return false
+      }
+      translateY += -400
+      comment.style.transform = `translateY(${translateY}px)`
+      count--
+    })
+
+    prev.addEventListener('click', function (event) {
+      event.preventDefault()
+      if (count == 3) {
+        // Xem hết bình luận
+        return false
+      }
+      translateY += 400
+      comment.style.transform = `translateY(${translateY}px)`
+      count++
+    })
+  </script>
+</body>

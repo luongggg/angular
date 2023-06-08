@@ -1,0 +1,83 @@
+<div class="row py-5" >
+    <div class="col-md-5">
+<img src="{{products.image}}" alt="">
+    </div>
+    <div class="col-md-7"style="max-width: 800px;" >
+        <h2 style="font-size: 35px;margin-top: 50px;margin-bottom: 20px;">{{products.name}}</h2>
+        <h2 style="color: brown;">{{products.price}}</h2>
+        <p style="margin-top: 10px;">{{products.description}}</p>
+        
+        <form action="" method="POST" class="form-inline" >
+            <button type="submit" style="margin-top: 20px;background-color: rgb(65, 69, 72);" class="btn btn-primary" (click)="addtoCart(products)" >Add to cart</button>
+
+        </form>
+        
+
+    </div>
+    <h2 style="font-size: 30px; text-align: center; margin-top: 8px;">THÔNG SỐ KỸ THUẬT</h2>
+    <div class="card border-primary">
+     
+      <div class="card-body">
+        
+        <p class="card-text" style="background-color: rgb(183, 178, 178);">   1	TÊN XE	KAWASAKI Z1000 <br>
+            2	Dung tích xy lanh	1043 cc <br>
+            3	Đường kính x Hành trình piston	62 x 49 mm <br>
+            4	Tỉ số nén	11.8 : 1 <br>
+            5	Động cơ 	4 thì, 4 xi lanh 16 van DOHC, FI, ABS <br>
+            6	Công suất cực đại	142 PS tại 10.000 v/ph <br>
+            7	Mô-men xoắn cực đại	111 Nm tại 7.300 v/ph <br>
+            8	Độ cao yên xe	815 mm 
+            9	Khoảng cách gầm xe	125 mm
+            10	Dài x Rộng x Cao	2.045 mm x 790 mm x 1.055 mm
+            11	Hệ thống phanh trước	ABS Đĩa đôi đường kính 310 mm
+            12	Hệ thống phanh sau	ABS Đĩa đơn đường kinh 250 mm
+            13	Kích trước lốp trước	120/70ZR17M/C
+            14	Kích thước lốp sau 	190/50ZR17M/C
+            15	Trọng lượng 	221 kg
+            16	Dung tích bình xăng	17 lít</p>
+            <a href=""><span style="text-align: center; color: blue;">See more</span> </a>  
+      </div>
+    </div>
+    <div *ngIf="getLocalstorage()===null" style="margin-bottom: 20px;">
+        Bạn cần đăng nhập để bình luận! Đăng nhập ngay 
+        <span style="cursor: pointer;color:blue;text-decoration: underline;" routerLink="/account">tại đây!</span>
+    </div>
+    <div >
+        <form *ngIf="getLocalstorage()!==null" #frm1="ngForm" (ngSubmit)="onComment()">
+            <div class="comment">
+                <h2 style="font-size: 25px; margin-left: 10px;">Bình luận</h2>
+    
+                <textarea name="cmt" [(ngModel)]="comment.name" type=" text"
+                    style="width: 80%; margin-left: 10px; border: 1px solid gray; outline: none;"
+                    placeholder=" bình luận...."> </textarea>>
+                <button style="background-color: blue; color: aliceblue; width: 60px;">Gửi</button>
+            </div>
+        </form>
+    </div>
+    <h3 style="font-size: 30px;margin: 20px 10px;">Đánh giá của khách hàng</h3>
+    <div  class="show__list__comment" *ngFor="let item of comments">
+        <div class="show__list__comment__item">
+            <div class="avatar">
+                <img src="../../../assets/iconuser.jpg" alt="">
+            </div>
+            <div class="comment_info">
+                <span class="user_comment">{{item.userComment}}</span> - <span>{{item.createAt| date :'dd/MM/YYYY hh:mm'}}</span>
+                <p class="content">{{item.content}}</p>
+            </div>
+        </div>
+    </div>
+    <h2 style="font-size: 30px; text-align: center; margin-top: 8px;">SẢN PHẨM LIÊN QUAN</h2>
+    <div class="card1_item" style="display: grid;grid-template-columns: 1fr 1fr 1fr; grid-gap: 3px; margin: 15px 0;  " >
+       
+            <div class="card rounded-xl" style="text-align: center;width: 455px;margin:3px 0px; background-color: rgba(240, 248, 255, 0.855);" *ngFor="let category of products.slice(0,3) " >
+                <a href="chi-tiet/{{category.id}}">
+                <img src="{{category.image}}" style="width: 400px;height: 250px;margin: auto ; padding-top:20px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">{{category.name}}.</p>
+                </div>
+            </a>
+            </div>
+     
+    </div>
+    
+</div>

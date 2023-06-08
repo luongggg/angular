@@ -1,0 +1,68 @@
+<div class="section">
+  <div class="container">
+    <div class="row full-height justify-content-center">
+      <div class="col-12 text-center align-self-center py-5">
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+          <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+          <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+          <label for="reg-log"></label>
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <div class="card-front ">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-4 pb-3">Log In 22</h4>
+                    <form >
+                      <div class="form-group">
+                        <input type="email" [(ngModel)]="login.email" name="logemail" #logemail="ngModel"
+                          class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                        <i class="input-icon uil uil-at"></i>
+                        <div>
+                          <h1 style="background-color: aqua;">{{this.login.name}}</h1>
+                        </div>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="password" name="logpass" [(ngModel)]="login.password" #logpass="ngModel"
+                          class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                    
+                   <p><button class="btn btn-primary" (click)="onlogin()">login</button></p>
+                      
+                    </form>
+                    <p class="mb-0 mt-4 text-center"><a href="/changepass" class="link">Forgot your password?</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-4 pb-3">Sign Up</h4>
+                    <form #frm1="ngForm" (ngSubmit)="onsignup()">
+                      <div class="form-group">
+                        <input type="email" [(ngModel)]="user.email" name="logemail" #logemail="ngModel"
+                          class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                        <i class="input-icon uil uil-at"></i>
+                        <div>
+                          <h1 style="background-color: aqua;">{{this.user.name}}</h1>
+                        </div>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="password" name="logpass" [(ngModel)]="user.password" #logpass="ngModel"
+                          class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+
+                    <input name="" id="" class="btn btn-primary" type="submit" value="Button">
+                      
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

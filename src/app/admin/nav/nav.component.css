@@ -1,0 +1,29 @@
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100px; /* Điều chỉnh độ rộng của cột tại đây */
+    background-color: #f1f1f1; /* Màu nền thanh điều hướng */
+    padding: 10px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các liên kết */
+    color: #333; /* Màu chữ của các liên kết */
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    background-color: #ddd; /* Màu nền khi di chuột qua liên kết */
+  }
+  
+  .nav-image {
+    width: 20px; /* Điều chỉnh kích thước hình ảnh */
+    margin-right: 10px; /* Điều chỉnh khoảng cách giữa hình ảnh và văn bản */
+  }
+  
+  .nav-text {
+    font-size: 14px; /* Điều chỉnh kích thước chữ */
+  }
+  

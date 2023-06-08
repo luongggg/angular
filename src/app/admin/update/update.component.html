@@ -1,0 +1,16 @@
+<form #frm1="ngForm" class="col-6 m-auto"(ngSubmit)="update()"style="width: 700px;padding-left: 300px;padding-top: 100px;"  >
+   <h1 style="font-size: 35px;text-align: center; margin-top: 100px; color: black;">Sửa Sản Phẩm</h1>
+    <p><label>Username</label>
+       <input name="name"  [(ngModel)]="products.name"  value="{{products.name}}"  name="name" class="form-control" type="text"> 
+    </p>
+    <p><label>gia</label>
+       <input name="gia" [(ngModel)]="products.price" value="{{products.price}}" name="gia" class="form-control" type=""> 
+    </p>
+    <p><label>image</label>
+      <input name="img"  [(ngModel)]="products.image" value="{{products.image}}" name="hinh" class="form-control" type=""> 
+   </p>
+    <p><label>description</label>
+        <input name="desc" [(ngModel)]="products.description" value="{{products.description}}" name="mo ta" class="form-control" type=""> 
+     </p>
+    <p> <button class="btn btn-sm btn-primary" style="margin-top: 20px; font-size: 20px;">Sửa sản phẩm</button> </p>
+    </form>

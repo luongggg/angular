@@ -1,0 +1,20 @@
+<table class="table table-hover table-bodered">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>name</th>
+    <th>hình</th>
+    <th>price</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let items of cartItems ,let i = index">
+    <td>{{i+1}}</td>
+    <td>{{items.name}}
+      {{items.id}}
+    </td>
+    <td><img src="{{items.image}}" width="200px" alt=""></td>
+    <td><button (click)="delet([items.id])" class="btn btn-danger">xóa</button></td>
+  </tr>
+</tbody>
+</table>

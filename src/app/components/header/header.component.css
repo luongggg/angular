@@ -1,0 +1,44 @@
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;
+}
+.info__user{
+    position: relative;
+}
+.logout{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: none;
+    background-color: #ccc;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.logout li{
+    cursor: pointer;
+}
+.name__user{
+    cursor: pointer;
+}
+.info__user:hover .logout{
+    display: block;
+}

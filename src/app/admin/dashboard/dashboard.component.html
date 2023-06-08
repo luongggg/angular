@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Bin-It">
+    <meta property="og:url" />
+    <meta property="og:type" content="truongbinit" />
+    <meta property="og:title" content="Website TruongBin" />
+    <meta property="og:description" content="Wellcome to my Website" />
+
+    <title>Nhân Viên | Quản Lý Bán Hàng</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- Latest compiled and minified CSS -->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <!--===============================================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
+</head>
+
+<body >
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> QUẢN
+                    LÝ SẢN PHẨM</a>
+            </div>
+          
+        </div>
+    </nav>
+    <div class="container-fluid al">
+        <div id="clock"></div>
+        <Br>
+        <p class="timkiemnhanvien"><b>TÌM KIẾM XE: <h1>{{searchtext}}</h1></b></p><Br><Br>
+        <form action="">
+            <input [(ngModel)]="searchtext" name="first" (ngModelChange)="onSearch()"  placeholder="Nhập tên nhân viên cần tìm...">
+      
+            
+        <i class="fa fa-search" aria-hidden="true"></i>
+
+    
+
+        
+        </form>
+        <b>CHỨC NĂNG CHÍNH:</b><Br>
+        <button class="nv btn add-new" type="button" data-toggle="tooltip" data-placement="top"
+            title="Thêm Nhân Viên"><a routerLink="create"><i class="fas fa-user-plus"></i></a></button>
+        <button class="nv" type="button" data-toggle="tooltip" data-placement="top"
+            title="Lọc Dữ Liệu"><i class="fa fa-filter" aria-hidden="true"></i></button>
+        <button class="nv xuat" data-toggle="tooltip" data-placement="top" title="Xuất File"><i
+                class="fas fa-file-import"></i></button>
+        <button class="nv cog" data-toggle="tooltip" data-placement="bottom" title=""><i
+                class="fas fa-cogs"></i></button>
+        <div class="table-title">
+            <div class="row">
+
+            </div>
+
+        </div>
+        <table class="table table-hover table-bordered" id="myTable">
+            <thead>
+                <tr class="ex">
+                    <th width="auto">#</th>
+                    <th width="auto">Tên xe</th>
+                    <th>hình ảnh</th>
+                    <th>giá</th>
+                    
+                    <th width="5px; !important">Tính Năng</th>
+                </tr>
+            </thead>
+            <tbody >
+             
+                
+                <tr style="text-align: center; margin: auto;" *ngFor="let pro of products ,let i=index ">
+                    <td>{{i}}</td>
+                    <td style="text-align: center;  padding-top: 120px;"> {{pro.name}}</td>
+                    <td style="text-align: center;  "><img src="{{pro.image}}" width="200px" alt=""></td>
+                    <td style="text-align: center;  padding-top: 120px;">{{pro.price}}</td>
+
+             
+                    <td>
+                        <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                aria-hidden="true"></i></a>
+                        <a class="edit" routerLink="admin/{{pro.id}}" style="padding-top: 110px;" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></a>
+                        <a class="delete" (click)="deleteProduct(pro.id)" style="padding-top: 110px;" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+              
+              
+            </tbody>
+        </table>
+        <div id="pageNavPosition" class="text-right"></div>
+       
+    </div>
+    <hr class="hr1">
+    <div class="container-fluid end">
+        <div class="row text-center">
+            <div class="col-lg-12 link">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-google"></i>
+            </div>
+            <div class="col-lg-12">
+                2019 CopyRight  quan ly xe máy | Design by <a href="#">nhóm 3</a>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>

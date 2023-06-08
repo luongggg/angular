@@ -1,0 +1,108 @@
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 280px;
+    margin-top: 20px;
+}
+
+.text1:hover{
+    color: rgb(189, 30, 30);
+}
+
+
+.news2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 950px;
+}
+
+.card{
+    margin-left: 22px;
+}
+
+.card-body p{
+    margin-top: 20px;
+}
+
+.card-body a{
+    margin-top: 10px;
+}
+
+.text2{
+    margin-top: 10px;
+}
+
+.text2:hover{
+    color: rgb(195, 32, 32);
+}
+
+
+.card{
+    margin-left: 0px;
+}
+.col-md-4 img{
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.col-md-4 a{
+    overflow: hidden;
+}
+
+.col-md-4 a:hover img{
+    transform: scale(1.1);
+}
+
+
+.card-vd:hover iframe{
+    transform: scale(1.1);
+}
+
+
+.menu{
+    margin-left: 30px;
+}
+
+.item h1{
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+    padding: 10px 10px;
+}
+.item1{
+    border: 1px solid gray;
+}
+
+.item11{
+    margin-top: 10px;
+}
+
+.item11 input{
+    
+    border: 1px solid gray;
+    width: 230px;
+    margin: 5px 20px;
+}
+.item11 button{
+    text-align: center;
+}
+
+.item2{
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.item22{
+    margin-top: 20px;
+}
+
+.item3{
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.item33{
+    margin-top: 20px;
+}

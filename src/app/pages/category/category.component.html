@@ -1,0 +1,12 @@
+<h1 >Danh sách xe</h1>
+<div class="car-list">
+  <!-- Các sản phẩm xe -->
+  <div class="car" *ngFor="let pro of products.slice(0,9)">
+    <img src="{{pro.image}}" alt="Car 1">
+    <h2>{{pro.name}}</h2>
+    <p>{{pro.price}}</p>
+    <a href="chi-tiet/{{pro.id}}">Xem chi tiết</a>
+  </div>
+  
+  <!-- Thêm các sản phẩm xe khác -->
+</div>

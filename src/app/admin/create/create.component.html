@@ -1,0 +1,16 @@
+<form #frm1="ngForm" class="col-6 m-auto" (ngSubmit)="onCreate()" style="width: 700px;padding-left: 300px;padding-top: 100px;">
+   <H1 style="text-align: center;font-size: 35px;margin-top: 100px;">THÊM</H1>
+   <p><label>Username</label>
+      <input name="un" [(ngModel)]="product.name" class="form-control" type="text" required>
+   </p>
+   <p><label>gia</label>
+      <input name="price" [(ngModel)]="product.price" class="form-control" type="text" required>
+   </p>
+   <p><label>desc</label>
+      <input name="desc" [(ngModel)]="product.description" class="form-control" type="text" required>
+   </p>
+   <p><label>image link</label>
+      <input name="img" [(ngModel)]="product.image" class="form-control" type="text" required>
+   </p>
+   <p> <button class="btn btn-success">Thêm</button> </p>
+</form>

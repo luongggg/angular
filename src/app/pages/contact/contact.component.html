@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+    <div class="container">
+        <form   >
+            <div class="row" >
+                <h3>ĐĂNG KÝ THÔNG TIN</h3>
+                <p><input type="text" name="name" [(ngModel)]="item.name" placeholder="Họ tên"></p>
+              
+                <p><input type="tel" name="sdt" [(ngModel)]="item.sdt" placeholder="Điện thoại"></p>
+              
+                <p> <input type="text" name="email" [(ngModel)]="item.email" placeholder="Email"></p>
+                
+                
+                <p><input type="text" name="content" [(ngModel)]="item.content" placeholder="Nội dung liên hệ..."></p>
+                <br>
+                <br>
+                <p> <button class="btn btn-success" (click)="onsubmit()" >liên hệ</button> </p>
+            </div>
+        </form>
+        <div class="row1">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p>BigBike Motor - Showroom mua bán xe mô tô PKL nhập khẩu</p>
+            <p> <span class="fa-solid fa-phone-volume"></span> Hotline :<a href="tel:0388587496">0388587496</a></p>
+            <p> <span class="fa-brands fa-facebook"></span> Facebook: <a
+                    href="https://www.facebook.com/profile.php?id=100051994591291">https://www.facebook.com/Thi-Su</a>
+            </p>
+            <p> <span class="fa-solid fa-envelope"></span> Email : <a
+                    href="suvantran2603@gmail.com">suvantran2603@gmail.com</a></p>
+            <p>Website: <a href="https://thuongmotor.com">https://thuongmotor.com</a></p>
+            <p> <span class="fa-solid fa-house"></span> Showroom 1: Km 9, Phạm Văn Đồng, Cầu Giấy, Hà Nội.</p>
+            <p> <span class="fa-solid fa-house"></span> Showroom 2: Số 120 Võ Chí Công Tây Hồ Hà Nội.</p>
+            <p> <span class="fa-solid fa-house"></span> Showroom 3: Lô A10-NV4 ô49+50, KĐT Trọng Tấn, Geleximco, An
+                Khánh, Hoài Đức,Hà Nội.<i class=""></i> </p>
+            <p> <span class="fa-solid fa-house"></span> Showroom 4: Tổ 28 dịch vọng cầu giấy Hà Nội ( BIGBIKE MOTO ).
+            </p>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8636056902606!2d105.74620773850769!3d21.038142801127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2sFPT%20Polytechnic%20Hanoi!5e0!3m2!1sen!2s!4v1685061340365!5m2!1sen!2s"
+            width="980" height="400" style="border:0;margin-top: 50px; margin-left: 250px;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>

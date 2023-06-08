@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Honda Touring11112345654321234",
+      "price": "1.230 tỷ",
+      "description": "Gold Wing 2021 có kích thước tổng thể 2.615 x 905 x 1.555 mm (dài x rộng x cao), chiều dài cơ sở 1.695 mm. Mẫu xe touring cỡ lớn của Honda dài và cao hơn đối thủ BMW K 1600 B lần lượt 486 mm và 90 mm. Khối lượng của Gold Wing là 390 kg, nặng hơn đời cũ 6 kg.",
+      "image": "https://cdp.azureedge.net/products/USA/HO/2021/MC/TOURING/GOLD_WING_AUTOMATIC_DCT/50/DEEP_PEARL_GRAY/2000000001.jpg",
+      "isDescriptionVisible": false
+    },
+    {
+      "id": "2",
+      "name": "honda Street",
+      "price": "200 triệu",
+      "description": "lorem ipsum",
+      "image": "https://xemaynamtien.com/uploads/source/san-pham/beat-street/z3861427874665-b48df19303e080a7f400f102105aaa5a.png",
+      "isDescriptionVisible": false
+    },
+    {
+      "name": "Sh Mode 125cc",
+      "price": "",
+      "desc": "",
+      "image": "",
+      "id": "8yazYy1"
+    },
+    {
+      "name": "123456",
+      "price": "23423",
+      "desc": "",
+      "image": "https://static.chotot.com/storage/chotot-kinhnghiem/xe/2022/06/3aba63df-bang-gia-xe-honda-sh-1024x576.jpeg",
+      "id": "wkME-Lg",
+      "description": "Gold Wing 2021 có kích thước tổng thể 2.615 x 905 x 1.555 mm (dài x rộng x cao), chiều dài cơ sở 1.695 mm. Mẫu xe touring cỡ lớn của Honda dài và cao hơn đối thủ BMW K 1600 B lần lượt 486 mm và 90 mm. Khối lượng của Gold Wing là 390 kg, nặng hơn đời cũ 6 kg."
+    },
+    {
+      "name": "Sh Mode 125cc",
+      "price": "2000000tr",
+      "description": "sdfghjl",
+      "image": "https://static.chotot.com/storage/chotot-kinhnghiem/xe/2022/06/3aba63df-bang-gia-xe-honda-sh-1024x576.jpeg",
+      "id": "utuv9kc"
+    },
+    {
+      "name": "    ",
+      "price": "ewrtytrewq",
+      "description": "qewr",
+      "image": "adsfhgjhfwew",
+      "id": "-GG52fC"
+    }
+  ],
+  "users": [
+    {
+      "email": "minh1234567@gmail.com",
+      "password": "$2a$10$Y3FYnfrUfQJd3XZB66gUz.TIppPBimY5KEVv5PnjuqT4PnfSv9NjS",
+      "id": 10
+    },
+    {
+      "email": "minh12345678@gmail.com",
+      "password": "$2a$10$KspWt0DcVtbbYTmyr8YN0uUSm42mJA/PD2rhsMM2yxzl2QT4EptiS",
+      "id": 11,
+      "role": 0
+    },
+    {
+      "email": "su1234@gmail.com",
+      "password": "$2a$10$LlnAtcrmQKxu2LaYVgQvNe.I/qmWMEViysWlW.qXxnCJT4l.4Ba9C",
+      "id": 12,
+      "role": 1
+    },
+    {
+      "email": "minhluong03@gmail.com",
+      "password": "$2a$10$/tdFhzLfjFR/FC1GiGSkB.8ubaitsWAZqI1SG/0KVU3lYnNxDHePe",
+      "id": 13
+    },
+    {
+      "email": "nhom3@gmail.com",
+      "password": "$2a$10$G1j/PhGY0C6Gw/05ds7UDuMqMienWwERlzzkKpVnCDYBT/DZthDvC",
+      "id": 14
+    },
+    {
+      "email": "nhom03@gmail.com",
+      "password": "$2a$10$bMoXb2Fcz9BtiS2mvqCDYORugsJxLz1y32rph/IyZZ32ZI6Wqem8e",
+      "role": 0,
+      "id": 15
+    },
+    {
+      "email": "minh@gmail.com",
+      "password": "$2a$10$3MY/U79DPN34DhdfWq7WSOaO/oHhPOaNTUp/5tgehg/2T1NEc5a3m",
+      "role": 0,
+      "id": 16
+    },
+    {
+      "email": "minh111@gmail.com",
+      "password": "$2a$10$3QfhbfQzSaaDTFs.5gQhBeLSCQiUFAqXLD/NUr0KTYy0Qu4yjI2j2",
+      "role": 0,
+      "id": 17
+    },
+    {
+      "email": "minhasdfgfd@gmail.com",
+      "password": "$2a$10$r3wkZ0Z9MWYrVUqy6bYRq.l1A5o9YczA99N22oBdQnYxE/NbRalAu",
+      "role": 0,
+      "id": 18
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "name": "minh hoang",
+      "sdt": 234567890,
+      "email": "minh2@gmail.com",
+      "content": "cần thêm các sản phẩm nhiều hơn"
+    },
+    {
+      "name": "tranluong123",
+      "sdt": "0962100267",
+      "email": "minhluong03032002@gmail.com",
+      "content": "asdfghjkl;",
+      "id": 2
+    },
+    {
+      "name": "tranluong123",
+      "sdt": "0962100267",
+      "email": "quanvd@gmail.com",
+      "content": "ádfghj",
+      "id": 3
+    },
+    {
+      "name": "ádfgh",
+      "sdt": "sdfgh",
+      "email": "minhluong030302@gmail.com",
+      "content": "sdfghj",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "name": "123456",
+      "price": "23423",
+      "desc": "",
+      "image": "https://static.chotot.com/storage/chotot-kinhnghiem/xe/2022/06/3aba63df-bang-gia-xe-honda-sh-1024x576.jpeg",
+      "id": "wkME-Lg",
+      "description": "Gold Wing 2021 có kích thước tổng thể 2.615 x 905 x 1.555 mm (dài x rộng x cao), chiều dài cơ sở 1.695 mm. Mẫu xe touring cỡ lớn của Honda dài và cao hơn đối thủ BMW K 1600 B lần lượt 486 mm và 90 mm. Khối lượng của Gold Wing là 390 kg, nặng hơn đời cũ 6 kg."
+    },
+    {
+      "id": 1,
+      "name": "Honda Touring1111",
+      "price": "1.230 tỷ",
+      "description": "Gold Wing 2021 có kích thước tổng thể 2.615 x 905 x 1.555 mm (dài x rộng x cao), chiều dài cơ sở 1.695 mm. Mẫu xe touring cỡ lớn của Honda dài và cao hơn đối thủ BMW K 1600 B lần lượt 486 mm và 90 mm. Khối lượng của Gold Wing là 390 kg, nặng hơn đời cũ 6 kg.",
+      "image": "https://cdp.azureedge.net/products/USA/HO/2021/MC/TOURING/GOLD_WING_AUTOMATIC_DCT/50/DEEP_PEARL_GRAY/2000000001.jpg",
+      "isDescriptionVisible": false
+    }
+  ],
+  "comments": [
+    {
+      "content": "fsafdnhjm,hmgnfbdvxz",
+      "idProduct": "1",
+      "userComment": "minh@gmail.com",
+      "createAt": "2023-06-07T08:44:06.108Z",
+      "nameProduct": "Honda Touring1111",
+      "id": 2
+    },
+    {
+      "content": "fsafdnhjm,hmgnfbdvxz",
+      "idProduct": "1",
+      "userComment": "minh@gmail.com",
+      "createAt": "2023-06-07T08:44:07.300Z",
+      "nameProduct": "Honda Touring1111",
+      "id": 3
+    },
+    {
+      "content": "ÁDFGHJGHFDSADSFGHJ",
+      "idProduct": "1",
+      "userComment": "minh111@gmail.com",
+      "createAt": "2023-06-07T09:57:05.412Z",
+      "nameProduct": "Honda Touring1111",
+      "id": 4
+    },
+    {
+      "content": "ádfghjkjhgfdsasdfg",
+      "idProduct": "2",
+      "userComment": "nhom3@gmail.com",
+      "createAt": "2023-06-07T10:02:03.415Z",
+      "nameProduct": "honda Street",
+      "id": 5
+    }
+  ]
+}

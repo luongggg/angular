@@ -1,0 +1,23 @@
+<div class="" style=" text-align: center;">
+    <h2 style="font-size: 25px; padding: 20px;">Quản lý bình luận</h2>
+    <table class="table" style="border: 1px solid gray; ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Sản phẩm bình luận</th>
+            <th scope="col">E-mail bình luận</th>
+            <th scope="col">Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of comments;index as i">
+              <td>{{i+1}}</td>
+              <td>{{item.content}}</td>
+              <td>{{item.nameProduct}}</td>
+              <th scope="row">{{item.userComment}}</th>
+            <button><td class="btn btn-danger" (click)="removeComment(item.id)">Xóa</td></button>
+          </tr>
+        </tbody>
+      </table>
+</div>
